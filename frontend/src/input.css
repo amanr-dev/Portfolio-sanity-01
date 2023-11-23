@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+  --primary-color: #edf2f8;
+  --secondary-color: #141e8d;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #472222;
+  --white-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .transition-basic {
+    @apply transition-all duration-700 ease-in;
+  }
+}
+
+input,
+textarea {
+  @apply bg-primaryWhiteColor w-full p-4 border-none rounded-sm font-serif text-blueColor outline-none;
+}
+
+textarea {
+  @apply hover:shadow-lg h-[150px] hover:shadow-blue-50;
+}
